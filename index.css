@@ -1,0 +1,14 @@
+.time-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-picker-container > * {
+    padding: 10px;
+    margin: 5px;
+}
+
+select, button {
+    width: 180px;
+}
