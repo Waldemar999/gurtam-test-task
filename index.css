@@ -1,3 +1,7 @@
+select, button {
+    width: 180px;
+}
+
 .time-picker-container {
     display: flex;
     flex-direction: column;
@@ -9,6 +13,23 @@
     margin: 5px;
 }
 
-select, button {
-    width: 180px;
+.bit-operations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.bit-operations-container select {
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+.bit-button {
+    width: 30px;
+    padding: 5px;
+}
+
+.active {
+    background-color: red;
 }

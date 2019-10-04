@@ -7,24 +7,45 @@
 	<link rel="stylesheet" href="./index.css">
 	<title>Test task</title>
 </head>
+
+<body>
 	<div class="time-picker-container">
-		<div>time</div>
-		<select name="" id="">
+		<div id="time-output">time</div>
+		<select name="" id="date-format">
 			<option>dd.MM.yyyy HH:mm:ss</option>
 			<option>yyyy-MM-dd HH:mm</option>
 			<option>yyyy/MM/dd HH:mm:ss</option>
 		</select>
-		<select name="" id="">
+		<select name="" id="timezone">
 			<option>(-06:00) Центральное время (США и Канада), Мехико</option>
 			<option>(+03:00) Минск, Багдад, Москва, Санкт-Петербург, Волгоград</option>
 			<option>(+06:00) Астана, Дакка, Омск</option>
 			<option>(+11:30) Остров Норфолк (Австралия)</option>
 		</select>
-		<button></button>
+		<button id="get-date">Get date</button>
 	</div>
-<body>
-
+	<div class="bit-operations-container">
+		<div id="bit-buttons">
+			<button class="bit-button">0</button>
+			<button class="bit-button">1</button>
+			<button class="bit-button">2</button>
+			<button class="bit-button">3</button>
+			<button class="bit-button">4</button>
+			<button class="bit-button">5</button>
+			<button class="bit-button">6</button>
+			<button class="bit-button">7</button>
+			<button class="bit-button">8</button>
+			<button class="bit-button">9</button>
+			<button class="bit-button">10</button>
+			<button class="bit-button">11</button>
+			<button class="bit-button">12</button>
+			<button class="bit-button">13</button>
+			<button class="bit-button">14</button>
+			<button class="bit-button">15</button>
+		</div>
+		<select multiple="multiple" id="numbers"></select>
+	</div>
 </body>
-<script src="./timeWorker.js"></script>
+<script src="./js/index.js" type="module"></script>
 
 </html>
