@@ -2,8 +2,9 @@ const numbersContainer = document.querySelector('#numbers');
 const randomNumbers = [];
 
 for (let i = 0; i < 50; i++) {
-    randomNumbers.push(Math.ceil(Math.random() * 1000));
     let option = document.createElement('option');
+
+    randomNumbers.push(Math.ceil(Math.random() * 1000));
     option.innerHTML = randomNumbers[i];
     numbersContainer.appendChild(option);
 }

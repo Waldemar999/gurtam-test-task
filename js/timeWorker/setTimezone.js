@@ -1,4 +1,4 @@
-export default (utcMilliseconds, timezone) => {
+export default (utcMilliseconds, selectedTimezone) => {
     const timezones = {
         central: {
             name: '(-06:00) Центральное время (США и Канада), Мехико',
@@ -18,13 +18,11 @@ export default (utcMilliseconds, timezone) => {
         },
     }
 
-    if (timezone === timezones.central.name) {
-        return (utcMilliseconds + timezones.central.utcMilliseconds);
-    } else if (timezone === timezones.minsk.name) {
-        return utcMilliseconds + timezones.minsk.utcMilliseconds;
-    } else if (timezone === timezones.astana.name) {
-        return utcMilliseconds + timezones.astana.utcMilliseconds;
-    } else if (timezone === timezones.norfolk.name) {
-        return utcMilliseconds + timezones.norfolk.utcMilliseconds;
+    for (const timezone of Object.values(timezones)) {
+        if (selectedTimezone === timezone.name) {
+            return utcMilliseconds + timezone.utcMilliseconds;
+        } else {
+            return console.error('Invalid timezone');
+        }
     }
 }
