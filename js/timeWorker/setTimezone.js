@@ -21,8 +21,6 @@ export default (utcMilliseconds, selectedTimezone) => {
     for (const timezone of Object.values(timezones)) {
         if (selectedTimezone === timezone.name) {
             return utcMilliseconds + timezone.utcMilliseconds;
-        } else {
-            return console.error('Invalid timezone');
         }
     }
 }
